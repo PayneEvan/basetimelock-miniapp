@@ -11,6 +11,7 @@ import { base } from "wagmi/chains";
 import { baseTimeLockAbi } from "@/lib/abis/base-time-lock";
 import { erc20Abi } from "@/lib/abis/erc20";
 import { BASE_TIME_LOCK_ADDRESS } from "@/lib/config/contracts";
+import { getDataSuffix } from "@/lib/attribution";
 import { formatDateTimeInput, isAddressLike, toUnlockTimestamp } from "@/lib/utils/format";
 
 const modes = [
@@ -109,6 +110,7 @@ export function CreateLockForm() {
           functionName: "depositETH",
           args: [BigInt(unlockTimestamp)],
           value,
+          dataSuffix: getDataSuffix(),
         });
         setStatus("Waiting for confirmation...");
         await publicClient.waitForTransactionReceipt({ hash });
@@ -142,6 +144,7 @@ export function CreateLockForm() {
           abi: erc20Abi,
           functionName: "approve",
           args: [BASE_TIME_LOCK_ADDRESS, value],
+          dataSuffix: getDataSuffix(),
         });
         await publicClient.waitForTransactionReceipt({ hash: approveHash });
         await tokenQuery.refetch();
@@ -155,6 +158,7 @@ export function CreateLockForm() {
         abi: baseTimeLockAbi,
         functionName: "depositERC20",
         args: [token, value, BigInt(unlockTimestamp)],
+        dataSuffix: getDataSuffix(),
       });
       setStatus("Waiting for confirmation...");
       await publicClient.waitForTransactionReceipt({ hash });

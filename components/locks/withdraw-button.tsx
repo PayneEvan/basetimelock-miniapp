@@ -5,6 +5,7 @@ import { usePublicClient, useWriteContract } from "wagmi";
 
 import { baseTimeLockAbi } from "@/lib/abis/base-time-lock";
 import { BASE_TIME_LOCK_ADDRESS } from "@/lib/config/contracts";
+import { getDataSuffix } from "@/lib/attribution";
 
 export function WithdrawButton({
   maturedCount,
@@ -31,6 +32,7 @@ export function WithdrawButton({
         address: BASE_TIME_LOCK_ADDRESS,
         abi: baseTimeLockAbi,
         functionName: "withdrawMatured",
+        dataSuffix: getDataSuffix(),
       });
       setMessage("Waiting for confirmation...");
       await publicClient.waitForTransactionReceipt({ hash });

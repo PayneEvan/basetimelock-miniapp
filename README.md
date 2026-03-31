@@ -16,6 +16,8 @@ BaseTimeLock is a lightweight Base Mini App for creating, tracking, and withdraw
 - Contract name: `BaseTimeLock`
 - Network: Base Mainnet
 - Address: `0x87f6c2850bdcd3c90020dd06dfce234a7c1efb97`
+- Builder code: `bc_ty0th80a`
+- Builder code hex: `0x62635f74793074683830610b0080218021802180218021802180218021`
 
 ## Features
 
@@ -25,6 +27,7 @@ BaseTimeLock is a lightweight Base Mini App for creating, tracking, and withdraw
 - Read `locksCount(address)` and `lockAt(address, idx)` live from chain
 - Detect matured vs pending locks
 - Withdraw all matured locks with `withdrawMatured()`
+- Append the encoded builder attribution suffix to write transactions
 
 ## Scripts
 

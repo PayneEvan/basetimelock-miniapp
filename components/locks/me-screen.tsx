@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { base } from "wagmi/chains";
 
-import { BASE_TIME_LOCK_ADDRESS } from "@/lib/config/contracts";
+import { BASE_TIME_LOCK_ADDRESS, BUILDER_CODE } from "@/lib/config/contracts";
 import { useTimeLockData } from "@/lib/use-time-lock-data";
 import { shortenAddress } from "@/lib/utils/format";
 
@@ -68,6 +68,11 @@ export function MeScreen() {
           <Link href="/create" className="text-[var(--primary)]">Create</Link>
           <Link href="/records" className="text-[var(--primary)]">Records</Link>
         </div>
+      </section>
+
+      <section className="rounded-[30px] border border-[var(--line)] bg-[var(--surface)] p-5">
+        <div className="text-[11px] uppercase tracking-[0.18em] text-[var(--muted)]">Builder Code</div>
+        <div className="mt-3 text-sm font-semibold text-[var(--text)]">{BUILDER_CODE}</div>
       </section>
     </div>
   );
