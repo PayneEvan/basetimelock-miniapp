@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #eef4ff;
+  --bg-strong: #dbeafe;
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --line: rgba(148, 163, 184, 0.22);
+  --text: #0f172a;
+  --muted: #5b6b84;
+  --primary: #2563eb;
+  --primary-soft: rgba(37, 99, 235, 0.12);
+  --success: #0f9f6e;
+  --success-soft: rgba(15, 159, 110, 0.14);
+  --warning: #f59e0b;
+  --warning-soft: rgba(245, 158, 11, 0.16);
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(180deg, #f6f9ff 0%, #ebf3ff 52%, #eef6ff 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font-family: "Segoe UI", "SF Pro Display", "Helvetica Neue", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(125, 211, 252, 0.22), transparent 28%),
+    linear-gradient(180deg, #f6f9ff 0%, #ebf3ff 52%, #eef6ff 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.24), transparent 82%);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+}
+
+
