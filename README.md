@@ -15,3 +15,12 @@ BaseTimeLock Mini App is built for users who want a compact dashboard for Base t
 It reads lock data directly from the Base mainnet contract and displays useful status information such as total locks, matured locks, and the next unlock time.
 
 The app supports both ETH locks and ERC20 asset locks.
+
+## Features
+
+- Overview-first dashboard
+- View matured lock count
+- View total lock count
+- View the next scheduled unlock
+- Create ETH locks with `depositETH(unlockAt)`
+- Create ERC20 locks with `approve` followed by `depositERC20(token, amount, unlockAt)`
