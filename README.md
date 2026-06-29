@@ -24,3 +24,10 @@ The app supports both ETH locks and ERC20 asset locks.
 - View the next scheduled unlock
 - Create ETH locks with `depositETH(unlockAt)`
 - Create ERC20 locks with `approve` followed by `depositERC20(token, amount, unlockAt)`
+- Read `locksCount(address)` live from chain
+- Read `lockAt(address, idx)` live from chain
+- Detect matured locks
+- Detect pending locks
+- Withdraw all matured locks with `withdrawMatured()`
+- Append the encoded builder attribution suffix to write transactions
+- Support Coinbase Wallet and injected wallets
