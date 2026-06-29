@@ -91,3 +91,11 @@ npm run lint
 ## Available Scripts
 
 ### `npm run dev`
+
+Starts the Next.js development server.
+
+### `npm run build`
+
+Creates a production build.
+
+### `npm run start`
