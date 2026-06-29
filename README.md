@@ -126,3 +126,11 @@ depositETH(unlockAt)
 ```
 
 ## Creating an ERC20 Asset Lock
+
+To create an ERC20 asset lock, enter the ERC20 contract address, amount, and unlock time.
+
+The app first requests approval and then deposits the asset into the time lock contract.
+
+The app uses the contract flow:
+
+```solidity
