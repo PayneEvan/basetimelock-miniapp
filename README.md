@@ -83,3 +83,11 @@ npm run start
 ```
 
 Run linting:
+
+```bash
+npm run lint
+```
+
+## Available Scripts
+
+### `npm run dev`
