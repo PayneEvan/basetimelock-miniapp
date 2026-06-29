@@ -107,3 +107,12 @@ Runs the production build locally.
 Runs the project lint checks.
 
 ## Usage
+
+1. Open the app in a browser.
+2. Connect a supported wallet.
+3. Review the dashboard summary.
+4. Create a new ETH or ERC20 asset lock.
+5. Wait until the configured unlock time has passed.
+6. Withdraw matured locks when available.
+
+## Creating an ETH Lock
