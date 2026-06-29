@@ -151,3 +151,12 @@ withdrawMatured()
 This withdraws all matured locks available through the contract method.
 
 ## Deployment
+
+The app is designed for deployment on Vercel.
+
+No environment variables are required for the default setup.
+
+## Project Notes
+
+- Wallet connectors are limited to Coinbase Wallet and injected wallets.
+- Base Mini App metadata is hardcoded in the root layout head output.
