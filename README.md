@@ -74,3 +74,12 @@ Build the app for production:
 
 ```bash
 npm run build
+```
+
+Start the production server:
+
+```bash
+npm run start
+```
+
+Run linting:
