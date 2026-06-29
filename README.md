@@ -99,3 +99,11 @@ Starts the Next.js development server.
 Creates a production build.
 
 ### `npm run start`
+
+Runs the production build locally.
+
+### `npm run lint`
+
+Runs the project lint checks.
+
+## Usage
