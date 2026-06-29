@@ -134,3 +134,10 @@ The app first requests approval and then deposits the asset into the time lock c
 The app uses the contract flow:
 
 ```solidity
+approve(...)
+depositERC20(token, amount, unlockAt)
+```
+
+## Withdrawing Matured Locks
+
+When one or more locks have matured, the dashboard identifies them as ready to withdraw.
