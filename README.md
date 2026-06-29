@@ -31,3 +31,12 @@ The app supports both ETH locks and ERC20 asset locks.
 - Withdraw all matured locks with `withdrawMatured()`
 - Append the encoded builder attribution suffix to write transactions
 - Support Coinbase Wallet and injected wallets
+
+## Tech Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- wagmi
+- viem
+- Vercel-ready deployment
