@@ -141,3 +141,13 @@ depositERC20(token, amount, unlockAt)
 ## Withdrawing Matured Locks
 
 When one or more locks have matured, the dashboard identifies them as ready to withdraw.
+
+Use the withdrawal action to call:
+
+```solidity
+withdrawMatured()
+```
+
+This withdraws all matured locks available through the contract method.
+
+## Deployment
