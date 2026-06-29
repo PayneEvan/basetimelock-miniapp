@@ -65,3 +65,12 @@ npm install
 ```
 
 Start the local development server:
+
+```bash
+npm run dev
+```
+
+Build the app for production:
+
+```bash
+npm run build
