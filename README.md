@@ -116,3 +116,13 @@ Runs the project lint checks.
 6. Withdraw matured locks when available.
 
 ## Creating an ETH Lock
+
+To create an ETH lock, choose the ETH option, enter the amount, select the unlock time, and submit the transaction.
+
+The app uses the contract method:
+
+```solidity
+depositETH(unlockAt)
+```
+
+## Creating an ERC20 Asset Lock
