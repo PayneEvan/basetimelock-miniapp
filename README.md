@@ -57,3 +57,11 @@ Clone the repository:
 git clone https://github.com/PayneEvan/basetimelock-miniapp.git
 cd basetimelock-miniapp
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server:
