@@ -160,3 +160,11 @@ No environment variables are required for the default setup.
 
 - Wallet connectors are limited to Coinbase Wallet and injected wallets.
 - Base Mini App metadata is hardcoded in the root layout head output.
+- The app icon is included as `app/icon.svg`.
+- The app is configured for Base mainnet interaction.
+- Contract reads are performed live from chain.
+- Write transactions include the encoded builder attribution suffix.
+
+## License
+
+No license information is included in the original project details.
